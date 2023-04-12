@@ -1,0 +1,42 @@
+.w1{
+    width: 90%;
+    background-color: rgb(56, 137, 137);
+    border: rgb(20, 48, 48) 2px solid;
+    border-radius: 5px;
+}
+.w1:hover{
+    background-color:rgb(170, 210, 210);
+}
+.w2{
+    width: 90%;
+    background-color: darkslategray;
+    border: rgb(20, 48, 48) 2px solid;
+    border-radius: 5px;
+}
+.w2:hover{
+    background-color:rgb(170, 210, 210);
+}
+.a1{
+    border: black 5px ridge;
+    border-radius: 10px;
+    background-color: rgb(78, 78, 78);
+    width: 30%;
+    margin-top: 5%;
+    padding: 3%;
+}
+@media(max-width:1300px ){
+    .a1{
+        width: 55%;
+    }
+}
+@media(max-width:500px ){
+    .a1{
+        width: 90%;
+    }
+}
+@media(max-width:370px ){
+    .a1{
+        width: 100%;
+        margin-top: 0%;
+    }
+}

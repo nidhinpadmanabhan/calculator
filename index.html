@@ -7,88 +7,89 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./cal.css">
 </head>
 <body style="background-color:slategrey ;">
-    <div class="container w-25 mt-5 p-3" style="border: black 5px ridge; border-radius: 10px; background-color: rgb(78, 78, 78);">
+    <div class="a1 container">
         <h2 class="text-center text-white">CALCULATOR</h2>
         <input id="result" type="text"class="form-control p-3" style="border: black 4px double;">
         <div class="ps-4 mt-3" style="border: rgb(20, 48, 48) 2px solid; border-radius: 10px;">
-        <div class="row container pt-3 pb-1">
+        <div class="q1 row container pt-3 pb-1">
             <div class="col-3">
-                <button onclick="displayData('(')" class="p-1" style="width: 90%; background-color: darkslategray; border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">(</button>
+                <button onclick="displayData('(')" class="w2 p-1" >(</button>
             </div>
             <div class="col-3">
-                <button onclick="displayData(')')" class="p-1" style="width: 90%; background-color: darkslategray; border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">)</button>
+                <button onclick="displayData(')')" class="w2 p-1">)</button>
             </div>
             <div class="col-3">
-                <button onclick="backSpace()" class="p-1" style="width: 90%; background-color: darkslategray; border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">&#9003;</button>
+                <button onclick="backSpace()" class="w2 p-1">&#9003;</button>
             </div>
             <div class="col-3">
-                <button onclick="allClear()" class="p-1" style="width: 90%; background-color: rgb(228, 47, 37); border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">AC</button>
-            </div>
-
-        </div>
-
-        <div class="row container pt-1 pb-1">
-            <div class="col-3">
-                <button onclick="displayData(7)" class="w p-1" style="width: 90%; background-color: rgb(56, 137, 137); border: rgb(20, 48, 48) 2px solid; border-radius: 5px;" >7</button>
-            </div>
-            <div class="col-3">
-                <button onclick="displayData(8)" class="w p-1" style="width: 90%; background-color: rgb(56, 137, 137); border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">8</button>
-            </div>
-            <div class="col-3">
-                <button onclick="displayData(9)" class="w p-1" style="width: 90%; background-color: rgb(56, 137, 137); border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">9</button>
-            </div>
-            <div class="col-3">
-                <button onclick="displayData('/')" class="p-1" style="width: 90%; background-color: darkslategray; border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">/</button>
+                <button onclick="allClear()" class="w2 p-1">AC</button>
             </div>
 
         </div>
 
-        <div class="row container pt-1 pb-1">
+        <div class="q1 row container pt-1 pb-1">
             <div class="col-3">
-                <button onclick="displayData(4)" class="p-1" style="width: 90%; background-color: rgb(56, 137, 137); border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">4</button>
+                <button onclick="displayData(7)" class="w1 p-1">7</button>
             </div>
             <div class="col-3">
-                <button onclick="displayData(5)" class="p-1" style="width: 90%; background-color: rgb(56, 137, 137); border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">5</button>
+                <button onclick="displayData(8)" class="w1 p-1">8</button>
             </div>
             <div class="col-3">
-                <button onclick="displayData(6)" class="p-1" style="width: 90%; background-color: rgb(56, 137, 137); border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">6</button>
+                <button onclick="displayData(9)" class="w1 p-1">9</button>
             </div>
             <div class="col-3">
-                <button onclick="displayData('*')" class="p-1" style="width: 90%; background-color: darkslategray; border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">*</button>
-            </div>
-
-        </div>
-
-        <div class="row container pt-1 pb-1">
-            <div class="col-3">
-                <button onclick="displayData(1)" class="p-1" style="width: 90%; background-color: rgb(56, 137, 137); border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">1</button>
-            </div>
-            <div class="col-3">
-                <button onclick="displayData(2)" class="p-1" style="width: 90%; background-color: rgb(56, 137, 137); border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">2</button>
-            </div>
-            <div class="col-3">
-                <button onclick="displayData(3)" class="p-1" style="width: 90%; background-color: rgb(56, 137, 137); border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">3</button>
-            </div>
-            <div class="col-3">
-                <button onclick="displayData('-')" class="p-1" style="width: 90%; background-color: darkslategray; border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">-</button>
+                <button onclick="displayData('/')" class="w2 p-1">/</button>
             </div>
 
         </div>
 
-        <div class="row container pt-1 pb-3">
+        <div class="q1 row container pt-1 pb-1">
             <div class="col-3">
-                <button onclick="displayData('.')" class="p-1" style="width: 90%; background-color: darkslategray; border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">.</button>
+                <button onclick="displayData(4)" class="w1 p-1">4</button>
             </div>
             <div class="col-3">
-                <button onclick="displayData(0)" class="p-1" style="width: 90%; background-color: rgb(56, 137, 137); border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">0</button>
+                <button onclick="displayData(5)" class="w1 p-1">5</button>
             </div>
             <div class="col-3">
-                <button onclick="evalExprsn()" class="p-1" style="width: 90%; background-color: darkslategray; border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">=</button>
+                <button onclick="displayData(6)" class="w1 p-1">6</button>
             </div>
             <div class="col-3">
-                <button onclick="displayData('+')" class="p-1" style="width: 90%; background-color: darkslategray; border: rgb(20, 48, 48) 2px solid; border-radius: 5px;">+</button>
+                <button onclick="displayData('*')" class="w2 p-1">*</button>
+            </div>
+
+        </div>
+
+        <div class="q1 row container pt-1 pb-1">
+            <div class="col-3">
+                <button onclick="displayData(1)" class="w1 p-1">1</button>
+            </div>
+            <div class="col-3">
+                <button onclick="displayData(2)" class="w1 p-1">2</button>
+            </div>
+            <div class="col-3">
+                <button onclick="displayData(3)" class="w1 p-1">3</button>
+            </div>
+            <div class="col-3">
+                <button onclick="displayData('-')" class="w2 p-1">-</button>
+            </div>
+
+        </div>
+
+        <div class="q1 row container pt-1 pb-3">
+            <div class="col-3">
+                <button onclick="displayData('.')" class="w2 p-1">.</button>
+            </div>
+            <div class="col-3">
+                <button onclick="displayData(0)" class="w1 p-1">0</button>
+            </div>
+            <div class="col-3">
+                <button onclick="evalExprsn()" class="w2 p-1">=</button>
+            </div>
+            <div class="col-3">
+                <button onclick="displayData('+')" class="w2 p-1">+</button>
             </div>
 
         </div>
