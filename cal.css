@@ -1,3 +1,6 @@
+body{
+    background-color:slategrey"
+}
 .w1{
     width: 90%;
     background-color: rgb(56, 137, 137);
@@ -14,6 +17,15 @@
     border-radius: 5px;
 }
 .w2:hover{
+    background-color:rgb(170, 210, 210);
+}
+.w3{
+    width: 90%;
+    background-color: rgb(195, 45, 45);
+    border: rgb(20, 48, 48) 2px solid;
+    border-radius: 5px;
+}
+.w3:hover{
     background-color:rgb(170, 210, 210);
 }
 .a1{
@@ -38,5 +50,8 @@
     .a1{
         width: 100%;
         margin-top: 0%;
+    }
+    body{
+        background-color: black"
     }
 }
